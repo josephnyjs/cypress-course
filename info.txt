@@ -1,0 +1,13 @@
+1. Installing cypress:
+npm install cypress --save-dev
+//After this you should see appear "node_modules" folder.
+
+2. Abrir Cypress:
+node_modules/bin/cypress open 
+otra forma mas usada: npx cypress open 
+
+3. Detener consola: 
+control+consola
+
+4. install npx
+npm install -g npx
