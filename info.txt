@@ -11,3 +11,7 @@ control+consola
 
 4. install npx
 npm install -g npx
+
+
+//Always required to use tab fucntion at the top of the file page
+require('cypress-plugin-tab')
