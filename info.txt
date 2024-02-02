@@ -15,3 +15,22 @@ npm install -g npx
 
 //Always required to use tab fucntion at the top of the file page
 require('cypress-plugin-tab')
+===============================================
+// How to call XPath
+// Contains e.x.: //span[contains(text(), 'Box')] or //span[contains(text(), 'Links')]  (text you wanna find)
+//
+// It is really easy to use the plugind for google chrome 
+// 'ChroPath', 'Relative XPath' and 'CSS an XPath Check'
+===============================================
+
+
+Links de interés: 
+Demo QA: 
+https://demoqa.com/elements
+
+OrangeHRM: 
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+Computer database:
+https://computer-database.gatling.io/computers/new
+
