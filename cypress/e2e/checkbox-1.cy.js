@@ -6,17 +6,19 @@ require('cypress-xpath')
 
 describe("Checkbox class",() => {
   it("Check one", () =>{
-      cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-      cy.title().should('eq','OrangeHRM')
-      cy.wait(1000)
-
-      cy.xpath('//*[@id="app"]//form/div[1]/div/div[2]/input').type('Admin').tab().type('admin123')
-      cy.xpath("//BUTTON[@type='submit']").should('be.visible').click()
-      cy.get(':nth-child(1) > .oxd-main-menu-item').should('be.visible').click()
-
-    //checkbox
-    cy.get('.oxd-table-row > :nth-child(1) > .oxd-checkbox-wrapper > label > .oxd-checkbox-input > .oxd-icon').click()
-      
-
+      cy.visit('https://rodrigovillanueva.com.mx/form/example-accessibility-advanced')
+      cy.get('[type="checkbox"]').check()
+      cy.wait(3000)
+      cy.get('[type="checkbox"]').uncheck()
   })
+
+  it.only("Check by selection", () => {
+    cy.visit('https://rodrigovillanueva.com.mx/form/example-accessibility-advanced')
+    cy.title().should('eq','Example: Accessibility Advanced | RodrigoVillanueva.com.mx')
+    cy.wait(2000)
+
+    cy.get('#edit-webform-checkboxes-other-checkboxes-three').check().should('be.checked')
+    cy.xpath('//*[@id="edit-webform-tableselect-sort-one-checkbox"]').check().should('be.checked')
+  })
+
 })//describe closes
