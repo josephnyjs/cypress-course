@@ -5,12 +5,11 @@ require('cypress-xpath')  //for using xpath
 
 
 describe("    ",() => {
-  it("   ", () =>{
-      cy.visit("  ")
+  it("   ", () => {
+      cy.visit('')
       cy.title().should('eq','')
       cy.xpath('')
-      cy.wait(3000)
-
+      cy.wait(1000)
 
   })
 })//describe closes
