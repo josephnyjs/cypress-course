@@ -10,7 +10,7 @@ module.exports = defineConfig({
       "viewportwidth": 1500,
       "viewportHeight": 900,
 
-      //HTTP security
+      //HTTP security icon 
       "chromeWebSecurity": false,
   },
 });
