@@ -4,7 +4,7 @@ require('cypress-plugin-tab') //for using tab fuction
 require('cypress-xpath')  //for using xpath
 
 
-describe("    ",() => {
+describe("Asserts Challenge",() => {
   it("   ", () => {
       cy.visit('')
       cy.title().should('eq','')
